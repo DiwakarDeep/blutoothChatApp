@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/listen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:text="LISTEN"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp" />
+
+    <Button
+        android:id="@+id/listDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/listen"
+        android:layout_marginStart="132dp"
+        android:text="LIST DEVICE"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="132dp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/listView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/listen"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentLeft="true">
+
+    </ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/listView"
+        android:layout_marginTop="31dp"
+        android:text="Message"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="75dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="35dp"
+        android:text="STATUS"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/writemsg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toStartOf="@+id/send"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/send" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Send"
+        android:id="@+id/send"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
